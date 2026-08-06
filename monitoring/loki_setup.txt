@@ -1,0 +1,20 @@
+
+1. How Loki was started:
+Loki container is running locally on port 3100 via Docker Engine:
+docker run -d -p 3100:3100 grafana/loki:3.0.0
+
+
+
+
+2. Log Forwarding configuration:
+Logs are streamed from local Docker containers using log drivers targeting the Grafana push API endpoint:
+http://localhost:3100/loki/api/v1/push
+
+
+
+
+
+3. Commands to view live metrics and runtime streams:
+LogQL syntax inside Grafana Explorer interface:
+{job="hello-devops"} |= "Hello"
+
