@@ -5,23 +5,22 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-
 jobs:
-  build-and-test:
-     runs-on: ubuntu-latest
+   build-and-test:
+      runs-on: ubuntu-latest
 
-     steps:
+      steps:
 
-       - name: Checkout the code
-         uses: actions/checkout@v4
+        - name: Checkout the code
+          uses: actions/checkout@v4
 
        
-       - name: Set up the python 
-         uses: actions/setup-python@v4
-         with:
-           python-version: "3.14"
-      - name: Run simple scripts 
-        run: python hello.py
+        - name: Set up the python 
+          uses: actions/setup-python@v4
+          with:
+            python-version: "3.14"
+        - name: Run simple scripts 
+          run: python hello.py
 
 
 
