@@ -1,5 +1,5 @@
 # DevOps Intern Final Assessment
-
+![CI Pipeline](https://github.com/YOUR_USERNAME/devops-intern-final/actions/workflows/ci.yml/badge.svg)
 ### Personal Details
 * **Name:** Muhammad Ramzan
 * **Date:** 08/06/2026
