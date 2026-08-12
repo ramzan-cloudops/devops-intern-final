@@ -1,5 +1,5 @@
 # DevOps Intern Final Assessment
-
+![CI Pipeline](https://github.com/ramzan-cloudops/devops-intern-final/actions/workflows/ci.yml/badge.svg)
 ### Personal Details
 * **Name:** Muhammad Ramzan
 * **Date:** 08/06/2026
@@ -21,6 +21,11 @@ The pipeline simulates a realistic production workflow incorporating:
 ---
 
 ## How to Run the Project
+
+### Step 1: Base Application Setup
+Run the base Python script to verify the application core logic:
+```bash
+python3 hello.py
 
 ### Step 2: Linux Shell Script (System Telemetry)
 The system metrics collector script gathers basic telemetry metadata directly from the core shell runtime environment.
@@ -57,5 +62,3 @@ Log tracking outputs and infrastructure setups are extensively detailed inside t
 ```bash
 # Run decentralized monitoring daemon service context
 docker run -d -p 3100:3100 grafana/loki:3.0.0
-```
-
