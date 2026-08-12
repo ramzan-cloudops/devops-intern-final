@@ -46,6 +46,8 @@ docker build -t devops-intern .
 # Instantiate runtime parameters via isolated engine
 docker run devops-intern:latest
 ```
+> **Proof of Execution:**
+![Docker Proof](docs/screenshots/docker-proof.png)
 
 ### Step 4: CI/CD Pipeline Automation (GitHub Actions)
 The automated check parameters are written inside `.github/workflows/ci.yml`. Continuous validation routines compile python configurations automatically upon every mainline release hook push event.
@@ -62,3 +64,5 @@ Log tracking outputs and infrastructure setups are extensively detailed inside t
 ```bash
 # Run decentralized monitoring daemon service context
 docker run -d -p 3100:3100 grafana/loki:3.0.0
+> **Proof of Service:**
+![Loki Proof](docs/screenshots/loki-proof.png)
