@@ -64,5 +64,7 @@ Log tracking outputs and infrastructure setups are extensively detailed inside t
 ```bash
 # Run decentralized monitoring daemon service context
 docker run -d -p 3100:3100 grafana/loki:3.0.0
+
 > **Proof of Service:**
 ![Loki Proof](docs/screenshots/loki-proof.png)
+
